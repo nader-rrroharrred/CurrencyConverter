@@ -57,9 +57,12 @@ public class LoginPageController implements Initializable {
 
     @FXML
     private void loginAction(ActionEvent event) {
-        String pass = passwordTextField.getText();
+         String pass = passwordTextField.getText();
         if (usernameTextField.getText().equals("user") && pass.equals("userpass")){
             ViewManager.switcher.openConverter();
+            usernameTextField.setText("");
+            passwordTextField.setText("");
+            loginFailedLabel.setText("");
         } else {
             loginFailedLabel.setText("Login Failed");
         }
