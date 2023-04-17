@@ -40,10 +40,12 @@ public class ScenesSwitcher extends Stage{
     
     public void openLogin(){
         this.setScene(login);
+        this.setTitle("Login");
         this.show();
     }
     public void openConverter(){
         this.setScene(Converter);
+        this.setTitle("Currency Converter");
         this.show();
     }
     
