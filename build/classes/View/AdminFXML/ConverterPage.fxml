@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.ConverterPageController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="32.0" layoutY="54.0" prefHeight="32.0" prefWidth="350.0" text="Currency Converter System">
+         <font>
+            <Font name="Yu Gothic Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutButton" layoutX="484.0" layoutY="55.0" mnemonicParsing="false" onAction="#logoutAction" style="-fx-background-color: #E86A33;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="USDTextField" layoutX="138.0" layoutY="227.0" onAction="#USDTextAction" prefHeight="31.0" prefWidth="118.0" />
+      <TextField fx:id="NISTextField" layoutX="345.0" layoutY="227.0" onAction="#NISTextAction" prefHeight="31.0" prefWidth="118.0" />
+      <Label fx:id="USDLabel" layoutX="167.0" layoutY="180.0" prefHeight="32.0" prefWidth="61.0" text="USD">
+         <font>
+            <Font name="Yu Gothic Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="NISLabel" layoutX="380.0" layoutY="180.0" prefHeight="32.0" prefWidth="49.0" text="NIS">
+         <font>
+            <Font name="Yu Gothic Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="TOLabel" layoutX="281.0" layoutY="227.0" prefHeight="32.0" prefWidth="39.0" text="TO">
+         <font>
+            <Font name="Yu Gothic Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="convertButton" layoutX="258.0" layoutY="307.0" mnemonicParsing="false" onAction="#convertAction" style="-fx-background-color: #454545;" text="Convert" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.Admin.LoginPageController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="-6.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="loginLogo" fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@login.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="usernameLabel" layoutX="260.0" layoutY="174.0" prefHeight="21.0" prefWidth="80.0" text="Username" textFill="#3c486b">
+               <font>
+                  <Font name="Yu Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="207.0" layoutY="201.0" onAction="#userTextAction" />
+            <Label fx:id="passwordLabel" layoutX="264.0" layoutY="240.0" prefHeight="21.0" prefWidth="72.0" text="Password" textFill="#3c486b">
+               <font>
+                  <Font name="Yu Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordTextField" layoutX="207.0" layoutY="268.0" onAction="#passwordAction" />
+            <Button fx:id="LoginButton" layoutX="253.0" layoutY="342.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #009FBD;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginFailedLabel" layoutX="253.0" layoutY="309.0" prefHeight="21.0" prefWidth="95.0" textFill="#f50000">
+               <font>
+                  <Font name="Yu Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
